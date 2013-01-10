@@ -23,9 +23,27 @@ a,a:visited, a:hover{text-decoration:none}
     font-family: "PT Serif", georgia, serif;
 }
 
+/*
+==================================================
+disqus / pagination
+==================================================
+*/
 a#post-count h4{color:#666; @extend .ptseriffont; font-weight:normal; font-size:14px;}
 a#post-count{}
 #disqus_thread{margin:20px 0 0 }
+
+div.pagination{
+
+    ul {background:none; @extend .ptseriffont;-webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none;}
+    ul li, ul li a {line-height:20px; border:none;  }
+    ul li a:hover{background:#fefefe;}
+    ul li a, ul li.next a{color:#777}
+    ul li.active a, ul li.disabled a{color:#BFC5C5}
+    ul li a{background:none;}
+
+}
+
+
 /*
 ==================================================
 Header and menu
