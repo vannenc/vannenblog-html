@@ -80,7 +80,7 @@ article{
 
     img.sep {display:block; width:540px; margin: 0 auto;}
     h1{line-height:30px; margin:0;}
-    h1 a, h1 {color: #a47e7e; font-size:18px; @extend .droidseriffont; font-weight:normal; @include text-shadow(0 1px 0 #fff); @include single-transition(all, .3s, ease-in,0); }
+    h1 a, h1 {color: #9c6d6d; font-size:18px; @extend .droidseriffont; font-weight:normal; @include text-shadow(0 1px 0 #fff); @include single-transition(all, .3s, ease-in,0); }
 
     h1 a:hover{color: #404a55;}
 
@@ -91,14 +91,9 @@ article{
         p.category {width:60%}
         p.category a{color:#999}
         p.category a:hover{color:#888}
-
-
     }
 
-
-
-
-    div.description p{color:#909191; @extend .ptseriffont; font-size:14px; margin:20px 0 10px 0px; line-height:25px;}
+    div.description p{color:#797979; @extend .ptseriffont; font-size:14px; margin:20px 0 10px 0px; line-height:25px;}
 
     footer{margin: 0 0 10px 0}
 
