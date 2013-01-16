@@ -74,13 +74,20 @@ wrapper / contents
 */
 
 div#wrapper{margin-top: 40px; margin-bottom:30px;}
-div#contents{padding: 10px; background:#f5f5f0; width:680px !important; @include border-radius(5px);}
+div#contents{padding: 10px; background:#f7f7f7; width:680px !important; @include border-radius(5px); box-shadow:0 1px 1px #ccc;}
 
 article{
 
+    dl{
+        @extend .ptseriffont;
+
+        dt{font-weight:normal; margin:20px 0 0}
+
+    }
+
     img.sep {display:block; width:540px; margin: 0 auto;}
     h1{line-height:30px; margin:0;}
-    h1 a, h1 {color: #9c6d6d; font-size:18px; @extend .droidseriffont; font-weight:normal; @include text-shadow(0 1px 0 #fff); @include single-transition(all, .3s, ease-in,0); }
+    h1 a, h1 {color: #9c6d6d; font-size:20px; @extend .droidseriffont; font-weight:normal; @include text-shadow(0 1px 0 #fff); @include single-transition(all, .3s, ease-in,0); }
 
     h1 a:hover{color: #404a55;}
 
@@ -93,7 +100,7 @@ article{
         p.category a:hover{color:#888}
     }
 
-    div.description p{color:#797979; @extend .ptseriffont; font-size:14px; margin:20px 0 10px 0px; line-height:25px;}
+    div.description p{color:#6c6c6c; @extend .ptseriffont; font-size:14px; margin:20px 0 10px 0px; line-height:25px;}
 
     footer{margin: 0 0 10px 0}
 
@@ -114,8 +121,8 @@ article{
         padding:0 10px 0 0;
         float:right;
 
-        a{ text-align:right; color: #AF9696; @extend .droidseriffont; display:block; width:97px; line-height:25px;}
-        a:hover{color:#888}
+        a{ text-align:right; color: #888; @extend .droidseriffont; display:block; width:97px; line-height:25px;}
+        a:hover{color:#AF9696}
     }
 }
 
@@ -162,6 +169,14 @@ aside#sidebar{
         ul li a#github{ background: transparent url(../images/github_normal.png) no-repeat;line-height:21px;}
         ul li a#github:hover{ background: transparent url(../images/github_normal.png) no-repeat;color:#5a727f;}
     }
+
+    div#rss{
+        margin: 45px 0 0 0;
+
+        a{background: left center url(../images/rss.png) no-repeat; padding: 0 0 0 30px;line-height:23px;@extend .ptseriffont;font-size:14px; color:#aaa; display:block; height:23px;}
+        a:hover{text-shadow: 0 2px 0 #ccc;}
+    }
+
 }
 
 /*
