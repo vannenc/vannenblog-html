@@ -85,6 +85,9 @@ article{
 
     }
 
+    blockquote{background:#fdfdfd; border-left:5px solid #ddd;}
+
+
     img.sep {display:block; width:540px; margin: 0 auto;}
     h1{line-height:30px; margin:0;}
     h1 a, h1 {color: #9c6d6d; font-size:20px; @extend .droidseriffont; font-weight:normal; @include text-shadow(0 1px 0 #fff); @include single-transition(all, .3s, ease-in,0); }
@@ -101,6 +104,10 @@ article{
     }
 
     div.description p{color:#6c6c6c; @extend .ptseriffont; font-size:14px; margin:20px 0 10px 0px; line-height:25px;}
+
+    div.description a{color: #70aaae; @extend .ptseriffont; font-weight:normal; text-shadow:0 1px 0 #fff;}
+    div.description a:hover{color: #64869a; @extend .ptseriffont; border-bottom: 1px #bbb dashed;}
+
 
     footer{margin: 0 0 10px 0}
 
@@ -127,6 +134,7 @@ article{
 }
 
 article:last-child{img.sep{display:none}}
+
 
 div#pagination{
 
